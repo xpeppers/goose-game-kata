@@ -1,7 +1,7 @@
 # The Goose Game Kata
 Goose game is a game where two or more players move pieces around a track by rolling a die. The aim of the game is to reach square number sixty-three before any of the other players and avoid obstacles. ([wikipedia](https://en.wikipedia.org/wiki/Game_of_the_Goose))
 
-This kata has been invented by Matteo Vaccari, you can find the original slides here --> [link](https://www.slideshare.net/pierodibello/il-dilettevole-giuoco-delloca-coding-dojo)
+This kata has been invented by [Matteo Vaccari](https://github.com/xpmatteo), you can find the original slides [here](https://www.slideshare.net/pierodibello/il-dilettevole-giuoco-delloca-coding-dojo).
 
 ## General requirements
 - You may use whatever programming language you prefer. Use something that you know well.
