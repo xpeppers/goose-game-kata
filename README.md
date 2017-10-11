@@ -20,16 +20,16 @@ As a player, I want to add me to the game so that I can play.
 1. Add Player
    ```js
    If there is no participant
-   the user writes "add player Pippo"
+   the user writes: "add player Pippo"
    the system responds: "players: Pippo"
-   the user writes "add player Pluto"
+   the user writes: "add player Pluto"
    the system responds: "players: Pippo, Pluto"
    ```
 
 2. Duplicated Player
    ```js
    If there is already a participant "Pippo"
-   the user writes "add player Pippo"
+   the user writes: "add player Pippo"
    the system responds: "Pippo: already existing player"
    ```
 
@@ -40,12 +40,12 @@ As a player, I want to move the marker on the board to make the game progress
 1. Start
    ```js
    If there are two participants "Pippo" and "Pluto" on the box "Start"
-   the user writes "move Pippo 4, 2"
-   the system responds "Pippo rolls 4, 2. Pippo moves from Start to 6"
-   the user writes "move Pluto 2, 2"
-   the system responds "Pluto rolls 2, 2. Pluto moves from Start to 4"
-   the user writes "move Pippo 2, 3"
-   the system responds "Pippo rolls 2, 3. Pippo moves from 6 to 11"
+   the user writes: "move Pippo 4, 2"
+   the system responds: "Pippo rolls 4, 2. Pippo moves from Start to 6"
+   the user writes: "move Pluto 2, 2"
+   the system responds: "Pluto rolls 2, 2. Pluto moves from Start to 4"
+   the user writes: "move Pippo 2, 3"
+   the system responds: "Pippo rolls 2, 3. Pippo moves from 6 to 11"
    ```
 
 ### 3. Win
@@ -55,15 +55,15 @@ As a player, I win the game if I reach the box "63"
 1. Victory
    ```js
    If there is one participant "Pippo" on the box "60"
-   the user writes "move Pippo 1, 2"
-   the system responds "Pippo rolls 1, 2. Pippo moves from 60 to 63. Pippo Wins!!"
+   the user writes: "move Pippo 1, 2"
+   the system responds: "Pippo rolls 1, 2. Pippo moves from 60 to 63. Pippo Wins!!"
    ```
 
 2. Winning with the exact dice shooting
    ```js
    If there is one participant "Pippo" on the box "60"
-   the user writes "move Pippo 3, 2"
-   the system responds "Pippo rolls 3, 2. Pippo moves from 60 to 63. Pippo bounces! Pippo returns to 61"
+   the user writes: "move Pippo 3, 2"
+   the system responds: "Pippo rolls 3, 2. Pippo moves from 60 to 63. Pippo bounces! Pippo returns to 61"
    ```
 ### 4. The game throws the dice
 As a player, I want the game throws the dice for me to save effort
@@ -73,7 +73,7 @@ As a player, I want the game throws the dice for me to save effort
    ```js
    If there is one participant "Pippo" on the box "4"
    assuming that the dice get 1 and 2
-   when the user writes "move Pippo"
+   when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 2. Pippo moves from 4 to 7"
    ```
 
@@ -85,7 +85,7 @@ As a player, when I get to the space "The Bridge", I jump to the space "12"
    ```js
    If there is one participant "Pippo" on the space "4"
    assuming that the dice get 1 and 1
-   when the user writes "move Pippo"
+   when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 1. Pippo moves from 4 to The Bridge. Pippo jumps to 12"
    ```
 
@@ -99,7 +99,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
    ```js
    If there is one participant "Pippo" on the space "3"
    assuming that the dice get 1 and 1
-   when the user writes "move Pippo"
+   when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 1. Pippo moves from 3 to 5, The Goose. Pippo moves again and goes to 7"
    ```
 
@@ -107,7 +107,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
    ```js
    If there is one participant "Pippo" on the space "10"
    assuming that the dice get 2 and 2
-   when the user writes "move Pippo"
+   when the user writes: "move Pippo"
    the system responds: "Pippo rolls 2, 2. Pippo moves from 10 to 14, The Goose. Pippo moves again and goes to 18, The Goose. Pippo moves again and goes to 22"
    ```
 
@@ -119,6 +119,6 @@ As a player, when I land on a space occupied by another player, I send him to my
    ```js
    If there are two participants "Pippo" and "Pluto" respectively on spaces "15" and "17"
    assuming that the dice get 1 and 1
-   when the user writes "move Pippo"
+   when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 1. Pippo moves from 15 to 17. On 17 there is Pluto, who returns to 15"
    ```
