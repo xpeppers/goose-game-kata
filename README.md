@@ -111,7 +111,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
    the system responds: "Pippo rolls 2, 2. Pippo moves from 10 to 14, The Goose. Pippo moves again and goes to 18, The Goose. Pippo moves again and goes to 22"
    ```
 
-### 7. Prank
+### 7. Prank (Optional Step)
 As a player, when I land on a space occupied by another player, I send him to my previous position so that the game can be more entertaining.
 
 **Scenarios:**
