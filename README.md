@@ -39,7 +39,7 @@ As a player, I want to move the marker on the board to make the game progress
 **Scenarios:**
 1. Start
    ```js
-   If there are two participants "Pippo" and "Pluto" on the box "Start"
+   If there are two participants "Pippo" and "Pluto" on space "Start"
    the user writes: "move Pippo 4, 2"
    the system responds: "Pippo rolls 4, 2. Pippo moves from Start to 6"
    the user writes: "move Pluto 2, 2"
@@ -49,19 +49,19 @@ As a player, I want to move the marker on the board to make the game progress
    ```
 
 ### 3. Win
-As a player, I win the game if I reach the box "63"
+As a player, I win the game if I land on space "63"
 
 **Scenarios:**
 1. Victory
    ```js
-   If there is one participant "Pippo" on the box "60"
+   If there is one participant "Pippo" on space "60"
    the user writes: "move Pippo 1, 2"
    the system responds: "Pippo rolls 1, 2. Pippo moves from 60 to 63. Pippo Wins!!"
    ```
 
 2. Winning with the exact dice shooting
    ```js
-   If there is one participant "Pippo" on the box "60"
+   If there is one participant "Pippo" on space "60"
    the user writes: "move Pippo 3, 2"
    the system responds: "Pippo rolls 3, 2. Pippo moves from 60 to 63. Pippo bounces! Pippo returns to 61"
    ```
@@ -71,7 +71,7 @@ As a player, I want the game throws the dice for me to save effort
 **Scenarios:**
 1. Dice roll
    ```js
-   If there is one participant "Pippo" on the box "4"
+   If there is one participant "Pippo" on space "4"
    assuming that the dice get 1 and 2
    when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 2. Pippo moves from 4 to 7"
@@ -83,7 +83,7 @@ As a player, when I get to the space "The Bridge", I jump to the space "12"
 **Scenarios:**
 1. Get to "The Bridge"
    ```js
-   If there is one participant "Pippo" on the space "4"
+   If there is one participant "Pippo" on space "4"
    assuming that the dice get 1 and 1
    when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 1. Pippo moves from 4 to The Bridge. Pippo jumps to 12"
@@ -97,7 +97,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
 **Scenarios:**
 1. Single Jump
    ```js
-   If there is one participant "Pippo" on the space "3"
+   If there is one participant "Pippo" on space "3"
    assuming that the dice get 1 and 1
    when the user writes: "move Pippo"
    the system responds: "Pippo rolls 1, 1. Pippo moves from 3 to 5, The Goose. Pippo moves again and goes to 7"
@@ -105,7 +105,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
 
 2. Multiple Jump
    ```js
-   If there is one participant "Pippo" on the space "10"
+   If there is one participant "Pippo" on space "10"
    assuming that the dice get 2 and 2
    when the user writes: "move Pippo"
    the system responds: "Pippo rolls 2, 2. Pippo moves from 10 to 14, The Goose. Pippo moves again and goes to 18, The Goose. Pippo moves again and goes to 22"
