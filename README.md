@@ -18,7 +18,7 @@ As a player, I want to add me to the game so that I can play.
 
 **Scenarios:**
 1. Add Player
-   ```js
+   ```cucumber
    If there is no participant
    the user writes: "add player Pippo"
    the system responds: "players: Pippo"
@@ -27,7 +27,7 @@ As a player, I want to add me to the game so that I can play.
    ```
 
 2. Duplicated Player
-   ```js
+   ```cucumber
    If there is already a participant "Pippo"
    the user writes: "add player Pippo"
    the system responds: "Pippo: already existing player"
@@ -38,7 +38,7 @@ As a player, I want to move the marker on the board to make the game progress
 
 **Scenarios:**
 1. Start
-   ```js
+   ```cucumber
    If there are two participants "Pippo" and "Pluto" on space "Start"
    the user writes: "move Pippo 4, 2"
    the system responds: "Pippo rolls 4, 2. Pippo moves from Start to 6"
@@ -53,14 +53,14 @@ As a player, I win the game if I land on space "63"
 
 **Scenarios:**
 1. Victory
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "60"
    the user writes: "move Pippo 1, 2"
    the system responds: "Pippo rolls 1, 2. Pippo moves from 60 to 63. Pippo Wins!!"
    ```
 
 2. Winning with the exact dice shooting
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "60"
    the user writes: "move Pippo 3, 2"
    the system responds: "Pippo rolls 3, 2. Pippo moves from 60 to 63. Pippo bounces! Pippo returns to 61"
@@ -70,7 +70,7 @@ As a player, I want the game throws the dice for me to save effort
 
 **Scenarios:**
 1. Dice roll
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "4"
    assuming that the dice get 1 and 2
    when the user writes: "move Pippo"
@@ -82,7 +82,7 @@ As a player, when I get to the space "The Bridge", I jump to the space "12"
 
 **Scenarios:**
 1. Get to "The Bridge"
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "4"
    assuming that the dice get 1 and 1
    when the user writes: "move Pippo"
@@ -96,7 +96,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
 
 **Scenarios:**
 1. Single Jump
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "3"
    assuming that the dice get 1 and 1
    when the user writes: "move Pippo"
@@ -104,7 +104,7 @@ The spaces 5, 9, 14, 18, 23, 27 have a picture of "The Goose"
    ```
 
 2. Multiple Jump
-   ```js
+   ```cucumber
    If there is one participant "Pippo" on space "10"
    assuming that the dice get 2 and 2
    when the user writes: "move Pippo"
@@ -116,7 +116,7 @@ As a player, when I land on a space occupied by another player, I send him to my
 
 **Scenarios:**
 1. Prank
-   ```js
+   ```cucumber
    If there are two participants "Pippo" and "Pluto" respectively on spaces "15" and "17"
    assuming that the dice get 1 and 1
    when the user writes: "move Pippo"
